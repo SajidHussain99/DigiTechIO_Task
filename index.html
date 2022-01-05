@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/81adc5ffee.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+                <!-- navbar section  -->
+    <nav>
+        <div class=" top-header ">
+
+
+
+            <div class="top-header-left d-flex align-items-center">
+
+                <a class="logo d-flex align-items-center" href="">
+                    <div class="logo-img">
+                        <img src="./images/logo3.png" alt="" style="width: 100%;height:100%;">
+                    </div>
+                    <div class="brand-name">
+                        <span>Sugar Balance</span>
+                    </div>  
+                </a>
+
+                <div class="menu-icon d-flex align-items-center">
+
+                    <label for="main-menu-checkbox">
+                        <span class="fas fa-bars" style="color:#000;"></span>
+                    </label>
+                   
+                    <input type="checkbox" id ="main-menu-checkbox" class="d-none" onclick="showHideMenu()" >
+                </div>
+
+            </div>
+
+            <div class="top-header__right d-flex align-items-center justify-content-center">
+
+                <div class="top-header__right-first d-flex">
+
+                    <div class="check-box my-auto mx-1">
+                        <img src="./images/checkbox-img.png" alt="" style="width: 100%;height: 100%;">
+                    </div>
+
+                    <div class=" d-flex flex-column justify-content-center align-items-center mx-1 top-header__heading">
+                        <p class="my-0 " id="days-count">180</p>
+                        <p class="my-0 ">DAY</p>
+                    </div>
+                    <div class="my-auto mx-1 top-header__heading">
+                        <p class="my-0">CONDITIONAL</p>
+                        <p class="my-0">MONEY BACK</p>
+                        <p class="my-0 font-weight-bold ">GUARANTEE</p>
+
+                    </div>
+
+                </div>
+
+                <div class="top-header__right-second d-flex ">
+                    <div class="globe my-auto">
+                        <img src="./images/globe1.png" alt="" style="width: 100%;height:100%;">
+                    </div>
+                    <div class="my-0 shipping-heading">
+                        <p class="my-0">GLOBAL FREE</p>
+                        <p class="font-weight-bold my-0">SHIPPING</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" top-header-menu " id="main-menu">
+            <div class="nav-items">
+                
+                <li class=""><a href="#">HOME</a></li>
+                <li class=""><a href="#">REVIEW</a></li>
+                <li class=""><a href="#">FAQ</a></li>
+                <li class=""><a href="#">ABOUT</a></li>
+                <li class=""><a href="#">CONTACT</a></li>
+            </div>
+
+            <a class="order d-flex justify-content-center align-items-center p-2">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="px-3 order-btn">
+                    <span>Order Now</span>
+                </div>
+            </a>
+        </div>
+
+    </nav>
+                <!-- top banner section  -->
+    <div class="top-banner">
+        <img src="./images/cover2.jpg" alt="" style="width: 100%;height:100%">
+    </div>
+                <!-- info banner  -->
+    <div class="info-banner">
+
+        <div class="timer d-flex justify-content-center align-items-center flex-wrap">
+
+            <div class="timer-item p-2 d-flex flex-column m-2 ">
+
+                <div class="counting p-2 d-flex justify-content-center align-items-center">
+                    <span class="text-center" id="day">0</span>
+                </div>
+
+                <div class="count-heading">
+                    <span>Days</span>
+                </div>
+
+            </div>
+
+            <div class="timer-item p-2 d-flex flex-column m-2">
+
+                <div class="counting p-2 d-flex justify-content-center align-items-center">
+                    <span class="text-center" id="hour">00</span>
+                </div>
+
+                <div class="count-heading">
+                    <span>Hours</span>
+                </div>
+
+            </div>
+
+            <div class="timer-item p-2 d-flex flex-column m-2">
+
+                <div class="counting p-2 d-flex justify-content-center align-items-center">
+                    <span class="text-center" id="minute">00</span>
+                </div>
+
+                <div class="count-heading">
+                    <span>Minutes</span>
+                </div>
+
+            </div>
+
+            <div class="timer-item p-2 d-flex flex-column m-2">
+
+                <div class="counting p-2 d-flex justify-content-center align-items-center">
+                    <span class="text-center" id="second">0</span>
+                </div>
+
+                <div class="count-heading">
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="info-banner-para text-capitalize text-center my-2 ">Save upto to $699 and create quick <span>Sugar balance</span> order today</p>
+
+        
+        <a class="info-banner__order d-flex justify-content-center align-items-center p-2">
+            <div class="order-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            
+            <div class="px-3 order-btn">
+                <span>Order Now</span>
+            </div>
+        </a>
+
+        <p class="info-banner-para text-capitalize text-center my-2 "><span>sugar balance</span> official site- 100% original</p>
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap my-2">
+            <div class="brand-item mx-2">
+                <img src="./images/brand1.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-2">
+                <img src="./images/brand2.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-2">
+                <img src="./images/brand3.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-2">
+                <img src="./images/brand4.png" alt="" style="width:100%; height:100%;">
+            </div>
+
+        </div>
+
+        <div class="info-banner-card__wrapper d-flex justify-content-center align-items-center flex-wrap my-4">
+
+            <a class="info-banner__card d-flex flex-column">
+
+                <div class="info-card-card__upper p-2 d-flex justify-content-center align-items-center">
+                    <div class="info__card-icon d-flex justify-content-center align-items-center ">
+                        <i class="fas fa-2x fa-syringe" style="color:#fff;"></i>
+                    </div>
+                </div>
+
+                <div class="info-card-card__lower p-2">
+                    <p class="text-center font-weight-bold">The Breakthrough Nature</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem commodi tempore laboriosam officia? Natus</p>
+                </div>
+            </a>
+
+            <a class="info-banner__card d-flex flex-column">
+
+                <div class="info-card-card__upper p-2 d-flex justify-content-center align-items-center">
+                    <div class="info__card-icon d-flex justify-content-center align-items-center ">
+                        <i class="fas fa-2x  fa-briefcase-medical" style="color:#fff;"></i>
+                    </div>
+                </div>
+
+                <div class="info-card-card__lower p-2">
+                    <p class="text-center font-weight-bold">The Breakthrough Nature</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem commodi tempore laboriosam officia? Natus</p>
+                </div>
+            </a>
+
+            <a class="info-banner__card d-flex flex-column">
+
+                <div class="info-card-card__upper p-2 d-flex justify-content-center align-items-center">
+                    <div class="info__card-icon d-flex justify-content-center align-items-center ">
+                      
+                        <i class="fas fa-2x fa-user-nurse" style="color:#fff;"></i>
+                    </div>
+                </div>
+
+                <div class="info-card-card__lower p-2">
+                    <p class="text-center font-weight-bold">The Breakthrough Nature</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem commodi tempore laboriosam officia? Natus</p>
+                </div>
+            </a>
+
+            <a class="info-banner__card d-flex flex-column">
+
+                <div class="info-card-card__upper p-2 d-flex justify-content-center align-items-center">
+                    <div class="info__card-icon d-flex justify-content-center align-items-center ">
+                        <i class="fas fa-2x fa-syringe" style="color:#fff;"></i>
+                    </div>
+                </div>
+
+                <div class="info-card-card__lower p-2">
+                    <p class="text-center font-weight-bold">The Breakthrough Nature</p>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem commodi tempore laboriosam officia? Natus</p>
+                </div>
+            </a>
+
+        </div>
+
+      
+
+
+    </div>
+                <!-- blog section  -->
+    <div class="blog-section ">
+        <p class="blog-para "><span class="heading1">Sugar Balance</span> <span class="heading2">How it works?</span></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+
+        <p class="blog-para "><span class="heading2">Why </span> <span class="heading1">Sugar Balance?</span></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+
+        <ul class="blog-list ">
+            <li class="py-1 blog-list__item">- It also support the functions of pancrease</li>
+            <li class="py-1 blog-list__item">- It also support the functions of pancrease</li>
+            <li class="py-1 blog-list__item">- It also support the functions of pancrease</li>
+            <li class="py-1 blog-list__item">- It also support the functions of pancrease</li>
+        </ul>
+
+        <p class="blog-para "><span class="heading2">How do I take </span> <span class="heading1">Sugar Balance?</span></p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, iusto id placeat maiores dolore aspernatur animi iure illo, esse, cupiditate quae quod cumque eveniet veritatis aperiam architecto sunt? Reprehenderit, sunt!</p>
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap my-4">
+            <div class="brand-item mx-4">
+                <img src="./images/brand1.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-4">
+                <img src="./images/brand2.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-4">
+                <img src="./images/brand3.png" alt="" style="width:100%; height:100%;">
+            </div>
+            <div class="brand-item mx-4">
+                <img src="./images/brand4.png" alt="" style="width:100%; height:100%;">
+            </div>
+
+        </div>
+
+    </div>
+
+                <!-- pacakages section  -->
+    <div class="packages-plans">
+        <p class=" text-uppercase text-center font-weight-bold packages-heading">now choose your saving packages</p>
+
+
+        <!-- //carasouel start  -->
+        <div id="carouselExampleControls" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100">
+                        <!-- item 1  -->
+              <div class="carousel-item active">
+                <div class="packages-plans__card__wrapper d-flex justify-content-center align-items-center flex-wrap">
+                            
+                            <!-- card 01  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/medcine.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 02  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med2.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 03  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med3.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+              </div>
+                        <!-- item 2  -->
+              <div class="carousel-item ">
+                <div class="packages-plans__card__wrapper d-flex justify-content-center align-items-center flex-wrap">
+                            
+                            <!-- card 01  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med4.png" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 02  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/medcine.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 03  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med3.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+              </div>
+                        <!-- item 3  -->
+              <div class="carousel-item ">
+                <div class="packages-plans__card__wrapper d-flex justify-content-center align-items-center flex-wrap">
+                            
+                            <!-- card 01  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/cover4.png" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 02  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med2.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                            <!-- card 03  -->
+                    <div class="package__card m-2 border">
+        
+                        <div class="img-div p-1">
+                            <div class="package-card__img border ">
+                                <img src="./images/med3.jpg" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+        
+                        <div class="package-card__details my-2 p-2">
+                            <h5 class="text-center main-color font-weight-bold text-capitalize ">6 Box of Sugar Balance</h5>
+                            <h6 class="text-center text-capitalize ">6 month best value package</h6>
+                            <h6 class="text-center main-color text-capitalize ">save up to $540</h6>
+                            <h6 class="text-center text-capitalize ">6 bottles</h6>
+                            <h6 class="text-center text-capitalize ">Retail price(USD): <span>$567.00</span></h6>
+                            <h6 class="text-center text-capitalize ">One time purchase:</h6>
+                            <h6 class="text-center text-capitalize ">$199.00 <span class="main-color font-weight-bold text-capitalize ">(save $689.00)</span></h6>
+                            <h6 class="text-center text-capitalize ">Free Global shipping</h6>
+        
+                            <a class="pacakage__order d-flex justify-content-center align-items-center p-2">
+                                <div class="order-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="px-3 order-btn">
+                                    <span>Order Now</span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev pr-5" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only" >Previous</span>
+            </a>
+            <a class="carousel-control-next pl-5" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!-- //carasouel end  -->
+
+
+    </div>
+
+                <!-- other pages  -->
+    <div class="other-pages">
+        <p class=" text-uppercase text-center font-weight-bold other-heading">other important pages </p>
+        <div class="other-cards-wrapper d-flex justify-content-center align-items-center flex-wrap">
+
+            <div class="other-cards m-2">
+
+                <div class="other-card__top ">
+                    <div class="other-card-img p-1" style="width: 100%;height: 100%;">
+                        <img src="./images/privacy.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover; ">
+                    </div>
+                </div>
+
+                <div class="other-card__heading d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 ">Privacy policy</span>
+                </div>
+
+                <a class="other-card-more-btn d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 read-more-text">Read more</span>
+                </a>
+            </div>
+
+            <div class="other-cards m-2">
+
+                <div class="other-card__top ">
+                    <div class="other-card-img p-1" style="width: 100%;height: 100%;">
+                        <img src="./images/privacy.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover; ">
+                    </div>
+                </div>
+
+                <div class="other-card__heading d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 ">Privacy policy</span>
+                </div>
+
+                <a class="other-card-more-btn d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 read-more-text">Read more</span>
+                </a>
+            </div>
+
+            <div class="other-cards m-2">
+
+                <div class="other-card__top ">
+                    <div class="other-card-img p-1" style="width: 100%;height: 100%;">
+                        <img src="./images/privacy.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover; ">
+                    </div>
+                </div>
+
+                <div class="other-card__heading d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 ">Privacy policy</span>
+                </div>
+
+                <a class="other-card-more-btn d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 read-more-text">Read more</span>
+                </a>
+            </div>
+
+            <div class="other-cards m-2">
+
+                <div class="other-card__top ">
+                    <div class="other-card-img p-1" style="width: 100%;height: 100%;">
+                        <img src="./images/privacy.jpg" alt="" style="height: 100%;width: 100%;object-fit: cover; ">
+                    </div>
+                </div>
+
+                <div class="other-card__heading d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 ">Privacy policy</span>
+                </div>
+
+                <a class="other-card-more-btn d-flex justify-content-center align-items-center">
+                    <span class="text-center w-100 read-more-text">Read more</span>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+
+            <!-- footer  -->
+    <footer >
+        <div class="footer-inner my-t">
+            <div class="">
+                <p class="text-center footer-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita earum, quisquam vitae nobis cum, animi totam atque consectetur error adipisci delectus voluptates veritatis ipsa nemo inventore. Perferendis unde cupiditate quisquam!</p>
+            </div>
+            <div class="footer-links d-flex justify-content-center align-items-center flex-wrap my-3">
+                <li class="f-links-item m-2"> <a href="">Home</a> </li>
+                <span class="font-weight-bold" style="color: #fff;">-</span>
+                <li class="f-links-item m-2"> <a href="">About</a> </li>
+                <span class="font-weight-bold" style="color: #fff;">-</span>
+                <li class="f-links-item m-2"> <a href="">FAQs</a> </li>
+                <span class="font-weight-bold" style="color: #fff;">-</span>
+                <li class="f-links-item m-2"> <a href="">Contacts</a> </li>
+            </div>
+        </div>
+        <div class="copyright py-2 d-flex justify-content-center align-items-center">
+            <p class="text-center text-capitalize my-auto">copyright 2022 @ Sugar Balance site | All rights reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- bootstrap js links  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
